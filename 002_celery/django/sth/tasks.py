@@ -20,7 +20,7 @@ def some_task():
     """ Some task """
     get_word_counts('python.txt')
     get_word_counts('go.txt')
-    get_word_counts('elrang.txt')
+    get_word_counts('erlang.txt')
     get_word_counts('javascript.txt')
     return "Task Done"
 
