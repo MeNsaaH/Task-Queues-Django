@@ -35,6 +35,7 @@ class SimpleQueue:
         return self.conn.llen(self.name)
 
 
+
 class SimpleTask:
     """ Task """
 

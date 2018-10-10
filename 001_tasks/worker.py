@@ -16,5 +16,4 @@ def worker():
     if queue.get_length() > 0:
         queue.dequeue()
     else:
-        print('No tasks in the queue')
         raise NoTaskException
