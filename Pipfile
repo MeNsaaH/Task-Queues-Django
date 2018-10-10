@@ -9,6 +9,7 @@ celery = "*"
 redis = "*"
 pip = "*"
 "autopep8" = "*"
+django-celery-results = "*"
 
 [dev-packages]
 pylint = "*"
