@@ -1,18 +1,17 @@
 """ A redis like Queue implementation """
 
 import pickle
-import time
 import uuid
-
-import redis
-
-from tasks import get_word_counts
 
 
 class SimpleQueue:
     """ Simple Queue for Task """
 
     def __init__(self, conn, name):
+        """ conn is a Redis Connection Object
+            name: name of queue
+        """
+
         self.conn = conn
         self.name = name
 
