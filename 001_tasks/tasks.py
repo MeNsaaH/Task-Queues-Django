@@ -28,7 +28,7 @@ def get_word_counts(filename):
         for line in f:
             wordcount.update(line.split())
     # save file
-    save_file(filename, json.dumps(dict(wordcount.most_common(0))))
+    save_file(filename, json.dumps(dict(wordcount.most_common(20))))
     # simulate long-running task
     time.sleep(2)
     proc = os.getpid()
