@@ -12,8 +12,8 @@ NUMBER_OF_TASKS = 3
 def process_tasks(task_queue):
     """ Execute tasks in task queue """
     while not task_queue.empty():
-        book = task_queue.get()
-        get_word_counts(book)
+        food = task_queue.get()
+        get_word_counts(food)
     return True
 
 

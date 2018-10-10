@@ -7,15 +7,17 @@ import sys
 import time
 import uuid
 
-DATA_DIRECTORY = os.path.join(os.path.dirname(__file__), 'data')
-OUTPUT_DIRECTORY = os.path.join(os.path.dirname(__file__), 'output')
-
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_DIRECTORY = os.path.join(BASE_DIR, 'data')
+OUTPUT_DIRECTORY = os.path.join(BASE_DIR, 'output')
 
 def save_file(filename, data):
     """ saves a text file with filename and populate with data """
     random_str = uuid.uuid4().hex
-    outfile = f'{filename}_{random_str}.txt'
-    with open(os.path.join(OUTPUT_DIRECTORY, outfile), 'w') as outfile:
+    # Create Output Directory if not exists
+    os.makedirs(OUTPUT_DIRECTORY, exist_ok=True)
+    outfile = os.path.join(OUTPUT_DIRECTORY, f'{filename}_{random_str}.txt')
+    with open(outfile, 'w') as outfile:
         outfile.write(data)
 
 
