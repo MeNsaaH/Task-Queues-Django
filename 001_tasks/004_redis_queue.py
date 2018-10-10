@@ -1,13 +1,13 @@
 """ A redis like Queue implementation """
 
-import pickle
 import time
-import uuid
 
 import redis
 
 from simple_queue import SimpleQueue
 from tasks import get_word_counts
+
+NUMBER_OF_TASKS = 5
 
 if __name__ == '__main__':
     r = redis.Redis()
@@ -20,5 +20,3 @@ if __name__ == '__main__':
         queue.enqueue(get_word_counts, 'javascript.txt')
         count += 4
     print(f'Enqueued {count} tasks!')
-
-    time.sleep(3)
