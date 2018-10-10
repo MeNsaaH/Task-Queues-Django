@@ -1,0 +1,16 @@
+Go (often referred to as Golang[12]) is a programming language designed by Google[13] engineers Robert Griesemer, Rob Pike, and Ken Thompson.[10] Go is a statically typed, compiled language in the tradition of C, with the added benefits of memory safety, garbage collection, structural typing,[3] and CSP-style concurrency.[14] The compiler, tools, and source code are all free and open source.[15]
+
+History
+Go was conceived in 2007 to solve engineering problems at Google by enabling higher productivity in an era of multicore processors, computer networks, and large codebases.[16] The designers wanted to resolve common criticisms of other languages, while retaining many of their useful characteristics:[17]
+
+Statically typed and efficient (like C++ or Java)
+Productive and easy to use (like Python or JavaScript)[18]
+Supporting integrated development environments, but not requiring them
+Enabling high-performance networking and multiprocessing
+The designers cited their shared dislike of C++ as a primary motivation for designing a new language.[19][20][21]
+
+Go was publicly announced in November 2009,[22] and version 1.0 was released in March 2012.[23][24] Go is widely used in production at Google[25] and in many other organizations and open-source projects.
+
+In April 2018, the original logo (Gopher mascot) was replaced with a stylized GO slanting right with trailing streamlines. However, the mascot remained the same.
+
+In August 2018, the Go principal contributors published two ″draft designs″ for new language features, Generics and Error Handling, and asked Go users to submit feedback on them.[26][27] Lack of support for generic programming and the verbosity of error handling in Go 1.x had drawn considerable criticism.

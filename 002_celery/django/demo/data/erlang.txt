@@ -1,0 +1,49 @@
+Erlang (/ˈɜːrlæŋ/ UR-lang) is a general-purpose, concurrent, functional programming language, as well as a garbage-collected runtime system.
+
+The term Erlang is used interchangeably with Erlang/OTP, or OTP, which consists of the Erlang runtime system, a number of ready-to-use components mainly written in Erlang, and a set of design principles for Erlang programs.[3]
+
+The Erlang runtime system is known for its designs that are well suited for systems with the following characteristics:
+
+Distributed
+Fault-tolerant
+Soft real-time,
+Highly available, non-stop applications
+Hot swapping, where code can be changed without stopping a system.[4]
+The Erlang programming language is known for the following properties:[5]
+
+Immutable data
+Pattern matching
+Functional programming
+The sequential subset of the Erlang language supports eager evaluation, single assignment, and dynamic typing.
+
+It was originally a proprietary language within Ericsson, developed by Joe Armstrong, Robert Virding and Mike Williams in 1986,[6] but was released as open source in 1998.[7][8] Erlang/OTP is supported and maintained by the OTP product unit at Ericsson.
+
+History
+The name "Erlang", attributed to Bjarne Däcker, has been presumed by those working on the telephony switches (for whom the language was designed) to be a reference to Danish mathematician and engineer Agner Krarup Erlang as well as a syllabic abbreviation of "Ericsson Language".[6][9]
+
+Erlang was designed with the aim of improving the development of telephony applications. The initial version of Erlang was implemented in Prolog and was influenced by the programming language PLEX used in earlier Ericsson exchanges. By 1988 Erlang had proven that it was suitable for prototyping telephone exchanges, but the Prolog interpreter was far too slow. One group within Ericsson estimated that it would need to be 40 times faster in order to be suitable for production use. In 1992 work began on the BEAM virtual machine (VM) which compiles Erlang to C using a mix of natively compiled code and threaded code to strike a balance between performance and disk space.[10] According to Armstrong, the language went from lab product to real applications following the collapse of the next-generation AXE exchange named AXE-N in 1995. As a result, Erlang was chosen for the next ATM exchange AXD.[6]
+
+In 1998 Ericsson announced the AXD301 switch, containing over a million lines of Erlang and reported to achieve a high availability of nine "9"s.[11] Shortly thereafter, Ericsson Radio Systems banned the in-house use of Erlang for new products, citing a preference for non-proprietary languages. The ban caused Armstrong and others to leave Ericsson.[12] The implementation was open-sourced at the end of the year.[6] Ericsson eventually lifted the ban; it re-hired Armstrong in 2004.[12]
+
+In 2006, native symmetric multiprocessing support was added to the runtime system and VM.[6]
+
+Erlang Worldview
+The Erlang view of the world, as Joe Armstrong, co-inventor of Erlang, summarized in his PhD thesis:[13]
+
+Everything is a process.
+Processes are strongly isolated.
+Process creation and destruction is a lightweight operation.
+Message passing is the only way for processes to interact.
+Processes have unique names.
+If you know the name of a process you can send it a message.
+Processes share no resources.
+Error handling is non-local.
+Processes do what they are supposed to do or fail.
+Joe Armstrong remarked in an interview with Rackspace in 2013: “If Java is 'write once, run anywhere', then Erlang is 'write once, run forever'.”[14]
+
+Usage
+In 2014, Ericsson reported Erlang was being used in its support nodes, and in GPRS, 3G and LTE mobile networks worldwide and also by Nortel and T-Mobile.[15]
+
+As Tim Bray, director of Web Technologies at Sun Microsystems, expressed in his keynote at OSCON in July 2008:
+
+If somebody came to me and wanted to pay me a lot of money to build a large scale message handling system that really had to be up all the time, could never afford to go down for years at a time, I would unhesitatingly choose Erlang to build it in.
