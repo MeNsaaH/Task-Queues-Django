@@ -1,6 +1,0 @@
-{
-    "python.pythonPath": "/home/user/Envs/Task-Queues-Django-ZUe63BEA/bin/python",
-    "python.linting.pylintArgs": [
-		"--load-plugins=pylint_django"
-	],
-}
