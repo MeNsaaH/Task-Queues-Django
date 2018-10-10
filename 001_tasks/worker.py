@@ -5,6 +5,10 @@ import redis
 from simple_queue import SimpleQueue
 
 
+class NoTaskException(Exception):
+    """ when no task in the Queue """
+    pass
+
 def worker():
     """ Worker to execute task """
     r = redis.Redis()
@@ -13,3 +17,4 @@ def worker():
         queue.dequeue()
     else:
         print('No tasks in the queue')
+        raise NoTaskException
