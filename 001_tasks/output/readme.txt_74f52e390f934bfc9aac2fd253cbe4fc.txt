@@ -1,0 +1,1 @@
+{"Python": 25, "and": 22, "the": 22, "a": 20, "of": 16, "to": 10, "in": 9, "for": 7, "is": 6, "by": 6, "Rossum": 6, "that": 6, "on": 6, "programming": 5, "language": 5, "has": 5, "as": 5, "Python's": 5, "was": 5, "I": 5}
