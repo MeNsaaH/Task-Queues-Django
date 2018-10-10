@@ -6,6 +6,9 @@ name = "pypi"
 [packages]
 django = "*"
 celery = "*"
+redis = "*"
+pip = "*"
+"autopep8" = "*"
 
 [dev-packages]
 pylint = "*"

@@ -1,11 +1,17 @@
 """ A redis like Queue implementation """
 
 import pickle
+import time
 import uuid
+
+import redis
+
+from tasks import get_word_counts
 
 
 class SimpleQueue:
     """ Simple Queue for Task """
+
     def __init__(self, conn, name):
         self.conn = conn
         self.name = name
@@ -21,7 +27,7 @@ class SimpleQueue:
         """ Remove Elements from Queue """
         _, serialized_task = self.conn.brpop(self.name)
         task = pickle.loads(serialized_task)
-        task.process_task
+        task.process_task()
         return task
 
     def get_length(self):
@@ -31,6 +37,7 @@ class SimpleQueue:
 
 class SimpleTask:
     """ Task """
+
     def __init__(self, func, *args):
         self.id = str(uuid.uuid4)
         self.func = func
